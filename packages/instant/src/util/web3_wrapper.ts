@@ -1,5 +1,5 @@
-import { Web3Wrapper } from '@0x/web3-wrapper';
+import { EthRPCClient } from '@0x/eth-rpc-client';
 
 import { getProvider } from './provider';
 
-export const web3Wrapper = new Web3Wrapper(getProvider());
+export const ethRPCClient = new EthRPCClient(getProvider());

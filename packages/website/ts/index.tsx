@@ -48,8 +48,8 @@ const LazySmartContractsDocumentation = createLazyComponent('Documentation', asy
 const LazyConnectDocumentation = createLazyComponent('Documentation', async () =>
     import(/* webpackChunkName: "connectDocs" */ 'ts/containers/connect_documentation'),
 );
-const LazyWeb3WrapperDocumentation = createLazyComponent('Documentation', async () =>
-    import(/* webpackChunkName: "web3WrapperDocs" */ 'ts/containers/web3_wrapper_documentation'),
+const LazyEthRPCClientDocumentation = createLazyComponent('Documentation', async () =>
+    import(/* webpackChunkName: "ethRPCClientDocs" */ 'ts/containers/eth_rpc_client_documentation'),
 );
 const LazySolCompilerDocumentation = createLazyComponent('Documentation', async () =>
     import(/* webpackChunkName: "solCompilerDocs" */ 'ts/containers/sol_compiler_documentation'),
@@ -126,8 +126,8 @@ render(
                                     component={LazyOrderUtilsDocumentation}
                                 />
                                 <Route
-                                    path={`${WebsitePaths.Web3Wrapper}/:version?`}
-                                    component={LazyWeb3WrapperDocumentation}
+                                    path={`${WebsitePaths.EthRPCClient}/:version?`}
+                                    component={LazyEthRPCClientDocumentation}
                                 />
                                 <Route
                                     path={`${WebsitePaths.SmartContracts}/:version?`}
@@ -148,8 +148,8 @@ render(
                                     component={LazyZeroExJSDocumentation}
                                 />
                                 <Route
-                                    path={`${WebsiteLegacyPaths.Web3Wrapper}/:version?`}
-                                    component={LazyWeb3WrapperDocumentation}
+                                    path={`${WebsiteLegacyPaths.EthRPCClient}/:version?`}
+                                    component={LazyEthRPCClientDocumentation}
                                 />
                                 <Route
                                     path={`${WebsiteLegacyPaths.Deployer}/:version?`}

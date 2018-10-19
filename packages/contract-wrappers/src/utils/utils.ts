@@ -1,5 +1,5 @@
 import { BigNumber } from '@0x/utils';
-import { Web3Wrapper } from '@0x/web3-wrapper';
+import { EthRPCClient } from '@0x/eth-rpc-client';
 
 import { constants } from './constants';
 
@@ -12,6 +12,6 @@ export const utils = {
         return new BigNumber(Date.now());
     },
     numberPercentageToEtherTokenAmountPercentage(percentage: number): BigNumber {
-        return Web3Wrapper.toBaseUnitAmount(constants.ONE_AMOUNT, constants.ETHER_TOKEN_DECIMALS).mul(percentage);
+        return EthRPCClient.toBaseUnitAmount(constants.ONE_AMOUNT, constants.ETHER_TOKEN_DECIMALS).mul(percentage);
     },
 };

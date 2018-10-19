@@ -339,7 +339,7 @@ export enum Docs {
 
 export enum WebsiteLegacyPaths {
     ZeroExJs = '/docs/0xjs',
-    Web3Wrapper = '/docs/web3_wrapper',
+    EthRPCClient = '/docs/web3_wrapper',
     Deployer = '/docs/deployer',
     Jobs = '/jobs',
 }
@@ -355,7 +355,7 @@ export enum WebsitePaths {
     Whitepaper = '/pdfs/0x_white_paper.pdf',
     SmartContracts = '/docs/contracts',
     Connect = '/docs/connect',
-    Web3Wrapper = '/docs/web3-wrapper',
+    EthRPCClient = '/docs/eth-rpc-client',
     ContractWrappers = '/docs/contract-wrappers',
     OrderWatcher = '/docs/order-watcher',
     SolCompiler = '/docs/sol-compiler',
@@ -372,7 +372,7 @@ export enum DocPackages {
     Connect = 'CONNECT',
     ZeroExJs = 'ZERO_EX_JS',
     SmartContracts = 'SMART_CONTRACTS',
-    Web3Wrapper = 'WEB3_WRAPPER',
+    EthRPCClient = 'WEB3_WRAPPER',
     SolCompiler = 'SOL_COMPILER',
     JSONSchemas = 'JSON_SCHEMAS',
     SolCov = 'SOL_COV',
@@ -449,7 +449,7 @@ export enum Key {
     Connect = 'CONNECT',
     Whitepaper = 'WHITEPAPER',
     Wiki = 'WIKI',
-    Web3Wrapper = 'WEB3_WRAPPER',
+    EthRPCClient = 'WEB3_WRAPPER',
     OrderUtils = 'ORDER_UTILS',
     And = 'AND',
     Faq = 'FAQ',

@@ -1,6 +1,6 @@
 import { BuyQuote } from '@0x/asset-buyer';
 import { BigNumber } from '@0x/utils';
-import { Web3Wrapper } from '@0x/web3-wrapper';
+import { EthRPCClient } from '@0x/eth-rpc-client';
 import * as _ from 'lodash';
 import * as React from 'react';
 import { connect } from 'react-redux';
@@ -41,7 +41,7 @@ const updateBuyQuoteAsync = async (
     assetAmount: BigNumber,
 ): Promise<void> => {
     // get a new buy quote.
-    const baseUnitValue = Web3Wrapper.toBaseUnitAmount(assetAmount, zrxDecimals);
+    const baseUnitValue = EthRPCClient.toBaseUnitAmount(assetAmount, zrxDecimals);
 
     // mark quote as pending
     dispatch(actions.updateBuyQuoteStatePending());
