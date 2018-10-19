@@ -8,6 +8,7 @@ import {
     ExchangeFillEventArgs,
     IndexedFilterValues,
 } from '@0x/contract-wrappers';
+import { EthRPCClient } from '@0x/eth-rpc-client';
 import { assetDataUtils, orderHashUtils, signatureUtils } from '@0x/order-utils';
 import { EtherscanLinkSuffixes, utils as sharedUtils } from '@0x/react-shared';
 import {
@@ -21,7 +22,6 @@ import {
 } from '@0x/subproviders';
 import { SignedOrder, Token as ZeroExToken } from '@0x/types';
 import { BigNumber, intervalUtils, logUtils, promisify } from '@0x/utils';
-import { EthRPCClient } from '@0x/eth-rpc-client';
 import { BlockParam, LogWithDecodedArgs, Provider, TransactionReceiptWithDecodedLogs } from 'ethereum-types';
 import * as _ from 'lodash';
 import * as moment from 'moment';
